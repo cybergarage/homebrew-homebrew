@@ -6,7 +6,6 @@ class Mupnp < Formula
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "readline"
-  depends_on "uhttp++"
 
   def install
     system "./bootstrap"
