@@ -1,7 +1,7 @@
 class Mupnp < Formula
   homepage "https://github.com/cybergarage/mupnpc"
   url "https://github.com/cybergarage/mupnpc/archive/3.0.1.tar.gz"
-  sha1 "424a00981524ffeeb9d2c29c86ac2cce0d4c64ee"
+  sha1 "7968619b22b55e23b986210905b4970f50a33ef0"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
