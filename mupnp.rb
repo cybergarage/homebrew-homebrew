@@ -10,9 +10,6 @@ class Mupnp < Formula
   def install
     system "./bootstrap"
     system "./configure_macosx", "--enable-libxml2",
-                                 "--disable-debug",
-                                 "--disable-dependency-tracking",
-                                 "--disable-silent-rules",
                                  "--prefix=#{prefix}"
     system "make"
     system "make", "install"
