@@ -5,11 +5,12 @@ class Mupnp < Formula
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
+  depends_on "expat"
   depends_on "readline"
 
   def install
     system "./bootstrap"
-    system "./configure_macosx", "--enable-libxml2",
+    system "./configure_macosx", "--enable-expat",
                                  "--disable-examples",
                                  "--prefix=#{prefix}"
     system "make"
