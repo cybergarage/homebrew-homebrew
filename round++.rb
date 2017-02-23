@@ -1,7 +1,7 @@
 class Roundxx < Formula
-  homepage "http://www.cybergarage.org/do/view/Main/Round"
-  url "https://github.com/cybergarage/round/archive/0.1.tar.gz"
-  sha1 "5f1b2513e55b97c2fd06ece3a3ac1f7978af413a"
+  homepage "https://github.com/cybergarage/round-cc"
+  url "https://github.com/cybergarage/round-cc/archive/0.1.tar.gz"
+  sha256 "1e31c162aab5b87d570464fe2f47130f82a5e590be09c21dfc41b73af7f67910"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
