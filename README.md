@@ -3,5 +3,5 @@
 Homebrew tap repository for cybergarage.org.
 
 ```
-brew tap cybergarage/brew
+brew tap cybergarage/homebrew
 ```
