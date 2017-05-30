@@ -1,7 +1,7 @@
 class Mupnpxx < Formula
-  homepage "http://www.cybergarage.org/do/view/Main/CyberLinkForCC"
-  url "https://github.com/cybergarage/mupnp/archive/3.0.1.tar.gz"
-  sha1 "78c8f6e105106447d456a89691791f15e5f28c93"
+  homepage "https://github.com/cybergarage/mupnp-cc"
+  url "https://github.com/cybergarage/mupnp-cc/archive/3.0.1.tar.gz"
+  sha256 "0980a9868fe78c24f7859fea712f236c25da45f2f9c90e6f89102120af752090"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build

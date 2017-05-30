@@ -1,7 +1,7 @@
 class Uhttpxx < Formula
-  homepage "http://www.cybergarage.org/do/view/Main/HttpEngineForCC"
-  url "https://github.com/cybergarage/uhttp/archive/0.8.tar.gz"
-  sha1 "b1ceb9f266d8465c1700be0a557efc7a5495786c"
+  homepage "http://www.cybergarage.org/oss/cloud/µhttp-for-cc/"
+  url "https://github.com/cybergarage/uhttp/archive/0.8.1.tar.gz"
+  sha256 "3c828cdd59eb4d555998ba4d5e7347b21b5451ca13e26aacb898d7f53ad2a3b0"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
