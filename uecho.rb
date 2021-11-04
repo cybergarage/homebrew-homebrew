@@ -11,7 +11,7 @@ class Uecho < Formula
     if OS.mac?
       system "./configure_macosx", "--disable-examples",
                                    "--prefix=#{prefix}"
-    elsif
+    else
       system "./configure", "--disable-examples",
                                    "--prefix=#{prefix}"
     end
