@@ -1,15 +1,20 @@
 class Uecho < Formula
   homepage "https://github.com/cybergarage/uecho"
-  url "https://github.com/cybergarage/uecho-c/archive/0.9.2.tar.gz"
-  sha256 "e2eee4028cfe390a5f76f1c4335b2bc3b8652740467e8cff264f32130491e39a"
+  url "https://github.com/cybergarage/uecho/archive/refs/tags/1.0.0.tar.gz"
+  sha256 "01e49838a8490e5b4f101ed2973ccf9bc163ed3714d2833664f5bf80c3e66c0e"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
 
   def install
     system "./bootstrap"
-    system "./configure_macosx", "--disable-examples",
-                                 "--prefix=#{prefix}"
+    if OS.mac?
+      system "./configure_macosx", "--disable-examples",
+                                   "--prefix=#{prefix}"
+    elsif
+      system "./configure", "--disable-examples",
+                                   "--prefix=#{prefix}"
+    end
     system "make"
     system "make", "install"
   end
