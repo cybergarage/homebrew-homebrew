@@ -10,10 +10,17 @@ class Mupnpxx < Formula
 
   def install
     system "./bootstrap"
-    system "./configure_macosx", "--disable-debug",
-                                 "--disable-dependency-tracking",
-                                 "--disable-silent-rules",
-                                 "--prefix=#{prefix}"
+    if OS.mac?
+      system "./configure_macosx", "--disable-debug",
+                                   "--disable-dependency-tracking",
+                                   "--disable-silent-rules",
+                                   "--prefix=#{prefix}"
+    else
+      system "./configure", "--disable-debug",
+                                   "--disable-dependency-tracking",
+                                   "--disable-silent-rules",
+                                   "--prefix=#{prefix}"
+    end
     system "make"
     system "make", "install"
   end
