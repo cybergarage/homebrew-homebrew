@@ -16,8 +16,8 @@ class Mupnp < Formula
                                    "--prefix=#{prefix}"
     else
       system "./configure", "--enable-expat",
-                                   "--disable-examples",
-                                   "--prefix=#{prefix}"
+                            "--disable-examples",
+                            "--prefix=#{prefix}"
     end
     system "make"
     system "make", "install"
