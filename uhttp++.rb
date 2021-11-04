@@ -15,7 +15,7 @@ class Uhttpxx < Formula
                                    "--disable-silent-rules",
                                    "--prefix=#{prefix}"
     else
-      system "./configure_macosx", "--disable-debug",
+      system "./configure", "--disable-debug",
                                    "--disable-dependency-tracking",
                                    "--disable-silent-rules",
                                    "--prefix=#{prefix}"
