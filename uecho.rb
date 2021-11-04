@@ -13,7 +13,7 @@ class Uecho < Formula
                                    "--prefix=#{prefix}"
     else
       system "./configure", "--disable-examples",
-                                   "--prefix=#{prefix}"
+                            "--prefix=#{prefix}"
     end
     system "make"
     system "make", "install"
