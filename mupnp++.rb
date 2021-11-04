@@ -17,9 +17,9 @@ class Mupnpxx < Formula
                                    "--prefix=#{prefix}"
     else
       system "./configure", "--disable-debug",
-                                   "--disable-dependency-tracking",
-                                   "--disable-silent-rules",
-                                   "--prefix=#{prefix}"
+                            "--disable-dependency-tracking",
+                            "--disable-silent-rules",
+                            "--prefix=#{prefix}"
     end
     system "make"
     system "make", "install"
