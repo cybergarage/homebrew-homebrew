@@ -10,9 +10,15 @@ class Mupnp < Formula
 
   def install
     system "./bootstrap"
-    system "./configure_macosx", "--enable-expat",
-                                 "--disable-examples",
-                                 "--prefix=#{prefix}"
+    if OS.mac?
+      system "./configure_macosx", "--enable-expat",
+                                   "--disable-examples",
+                                   "--prefix=#{prefix}"
+    else
+      system "./configure", "--enable-expat",
+                                   "--disable-examples",
+                                   "--prefix=#{prefix}"
+    end
     system "make"
     system "make", "install"
   end
