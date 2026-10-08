@@ -1,6 +1,6 @@
 class Mupnp < Formula
-  homepage "https://github.com/cybergarage/mupnpc"
-  url "https://github.com/cybergarage/mupnpc/archive/refs/tags/3.1.1.tar.gz"
+  homepage "https://github.com/cybergarage/mupnp"
+  url "https://github.com/cybergarage/mupnp/archive/refs/tags/3.1.1.tar.gz"
   sha256 "acf32fd0a16f4bfd3fd851a1fe8b06c548a409abd63cde6ee515c08e77218ce2"
 
   depends_on "autoconf" => :build
