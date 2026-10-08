@@ -1,7 +1,7 @@
 class Uecho < Formula
   homepage "https://github.com/cybergarage/uecho"
-  url "https://github.com/cybergarage/uecho/archive/refs/tags/1.2.3.tar.gz"
-  sha256 "e3137863b509f4127c291a9f69984724c63251f1fb582a798f1bcfe3fa718913"
+  url "https://github.com/cybergarage/uecho/archive/refs/tags/1.4.2.tar.gz"
+  sha256 "9de6e6c879c43f7e00fdafae8d8f1029fb6689b57230a4fecc0588b8eada79ad"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
